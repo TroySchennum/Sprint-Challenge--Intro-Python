@@ -25,23 +25,47 @@ humans = [
 # whose name starts with 'D':
 print("Starts with D:")
 a = []
+for human in humans:
+        if human.name[0] == 'D':
+            a.append(human.name)
 print(a)
 
 # Write a list comprehension that creates a list of names of everyone
 # whose name ends in "e".
 print("Ends with e:")
 b = []
+for human in humans:
+        if human.name[-1] == 'e':
+            b.append(human.name)
 print(b)
 
 # Write a list comprehension that creates a list of names of everyone
 # whose name starts with any letter between 'C' and 'G' inclusive.
 print("Starts between C and G, inclusive:")
 c = []
+for human in humans:
+        if human.name[0] == 'C':
+           c.append(human.name)
+        if human.name[0] == 'D':
+           c.append(human.name)
+        if human.name[0] == 'E':
+           c.append(human.name)
+        if human.name[0] == 'F':
+           c.append(human.name)
+        if human.name[0] == 'G':
+           c.append(human.name)
 print(c)
 
 # Write a list comprehension that creates a list of all the ages plus 10.
 print("Ages plus 10:")
-d = []
+
+def mult2_list(l):
+    for i in l:
+        print(i + 10)
+
+d = [mult2_list(human.age)]
+
+
 print(d)
 
 # Write a list comprehension that creates a list of strings which are the name
